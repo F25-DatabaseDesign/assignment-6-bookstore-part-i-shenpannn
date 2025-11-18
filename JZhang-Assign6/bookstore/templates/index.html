@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main>
+    <div id="mainLeft">
+        <!-- Insert some welcome text here -->
+        <h1 class="welcomeText">Welcome to the cooking section</h1>
+        <p class="welcomeText">Craving pizza, steak, cocktails, or something sweet?</p>
+        <p class="welcomeText">Browse out decent bools for cookings and aspiring bartenders</p>
+        <p class="welcomeText">Pick a category on the right to get started with your amazing journey!</p>
+    </div>
+    <div id='mainRight'>
+        <h1>Shop by category:</h1>
+        <div id='categorySelections'>
+            <!-- Create a for loop to iterate through the list of categories -->
+            {% for category in categories %}
+                <div class='category'>
+                    <p>
+                        <a href="{{ url_for('category', categoryId=category[0]) }}">
+                            {{ category[1] }}
+                         </a>
+                    </p>
+
+                    <a href="{{ url_for('category', categoryId=category[0]) }}">
+                        <img
+                            src="{{ url_for('static', filename='images/categories/' ~ category[1] ~ '.jpg') }}"
+                            alt="{{ category[1] }}">
+                    </a>     
+                </div>
+            {%endfor%}
+        </div>
+    </div>
+</main>
+{% endblock %}

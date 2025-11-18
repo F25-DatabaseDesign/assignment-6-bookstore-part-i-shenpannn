@@ -1,0 +1,380 @@
+/* Styles used on multiple pages */
+
+body {
+    max-width: 1160px;
+    font: 1em normal Arial, sans-serif;
+    color: #2c1b0f; 
+    background-color: #fff7ec; 
+}
+
+/* rules for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10px;
+    padding: 10px 0 5px 0;
+}
+
+/* rules for the center header */
+#searchBoxForm {
+    margin-top: 30px;
+    display: flex;
+    background-color: #fff; 
+    border-radius: 20px;
+    padding: 3px 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.08);
+}
+
+#searchBox {
+    height: 24px;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    border-radius: 20px 0 0 20px;
+    font-size: 0.9em;
+}
+
+#searchBox::placeholder {
+    color: #b8a89c;
+}
+
+/* dropdown styles */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.dropdownSelect {
+    width: 189px;
+    padding: 6px 5px;
+    background-color: #e47c2e; 
+    color: white;
+    text-align: center;
+    display: block;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding-top: 5px;
+    z-index: 1;
+    border-radius: 12px;
+    background-color: #3b2a1d; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    display: block;
+    padding: 6px 0;
+    color: #ffe4c4;
+    text-decoration: none;
+    font-size: 0.92em;
+}
+
+.dropdownContent a:hover {
+    color: #f9f2e8;
+    background-color: #e47c2e;
+}
+
+/* rules for the right header */
+
+#rightHeader {
+    display: flex;
+    margin-top: 35px;
+    align-items: center;
+}
+
+#cartCount{
+    width: 150px;
+    margin: 4px 0 0 10px;
+    font-size: 0.9em;
+    color: #5a3a26;
+}
+
+.loginButton {
+    background-color: #3b6b3a; 
+    width: 70px;
+    height: 30px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+.loginButton a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.loginButton a:hover {
+    color: #fffbf5;
+    text-decoration: none;
+}
+
+/* rules for the footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d4b495;
+    margin-left: 10px;
+    padding: 12px 0;
+    font-size: 0.8em;
+    background-color: #fbe2c6;
+    border-radius: 0 0 10px 10px;
+}
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 10px;
+    width: 380px;
+    color: #5a3a26;
+}
+
+#footerLeft a{
+    padding-top: 6px;
+    margin-left: 12px;
+    color: #8b4c2d;
+    text-decoration: none;
+}
+
+#footerLeft a:hover {
+    text-decoration: underline;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    width: 80px;
+}
+
+#notFoundMessage {
+    color: #b91c1c;
+}
+
+.commandButton {
+    height: 30px;
+    width: 160px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #e47c2e;
+    font-size: 0.85em;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submitButton {
+    height: 22px;
+    border-radius: 12px;
+    border: none;
+    margin: 6px 0 0 4px;
+    text-align: center;
+    background-color: #e47c2e;
+    color: white;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* layout for main area */
+
+main {
+    display: flex;
+    margin: 5px 0 0 10px;
+    border-top: 1px solid #d4b495;
+    border-left: 1px solid #d4b495;
+    border-right: 1px solid #d4b495;
+    background-color: #fffdf8;
+    border-radius: 10px 10px 0 0;
+}
+
+h1{
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #3b2a1d;
+}
+
+/* Styles only used on the index page */
+/* left-hand Welcome text section */
+#mainLeft {
+    width: 550px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#mainLeft p{
+    font-size: 115%;
+}
+
+.welcomeText {
+    max-width: 420px;
+}
+
+/* right-hand Category section */
+#mainRight {
+    max-width: 600px;
+    border-left: 1px solid #d4b495;
+    padding: 20px 0;
+    background-color: #fff4e3;
+    text-align: center;
+}
+
+#categorySelections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 299px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #8b4c2d;
+    font-weight: bold;
+}
+
+.category a{
+    text-decoration: none;
+    color: #8b4c2d;
+}
+
+.category a:hover {
+    color: #e47c2e;
+}
+
+/* Styles used on the category page */
+/* left-hand navigation section */
+
+#catLeft {
+    width: 500px;
+    border-right: 1px solid #d4b495;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff7ec;
+}
+
+.notSelectedCategory {
+    height: 32px;
+    width: 170px;
+    border-radius: 20px;
+    margin: 14px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #e47c2e;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+.notSelectedCategory a{
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.notSelectedCategory a:hover {
+    color: #fffdf8;
+}
+
+.selectedCategory {
+    height: 32px;
+    width: 170px;
+    border: 2px solid #e47c2e;
+    border-radius: 20px;
+    margin: 14px;
+    text-align: center;
+    line-height: 32px;
+    color: #e47c2e;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+/* right-hand section that shows all the books */
+
+#catRight {
+    padding: 20px 20px 20px 30px;
+    box-shadow: inset 0 0 0 20px #fff4e3;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff4e3;
+}
+
+.book {
+    width: 350px;
+    margin: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.book img {
+    border-radius: 12px 0 0 12px;
+}
+
+.bookDetailBox {
+    margin: 16px 10px 12px 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875em;
+    color: #3b2a1d;
+}
+
+.bookTitle {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.bookDetail {
+    margin-top: 2px;
+    font-size: 0.85em;
+    color: #5a3a26;
+}
+
+.bookPrice {
+    margin-top: 6px;
+    font-weight: bold;
+    color: #3b6b3a;
+}
+
+.actionButton {
+    height: 22px;
+    width: 90px;
+    border-radius: 14px;
+    margin-top: 6px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #e47c2e;
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.actionButton:hover {
+    background-color: #c96219;
+}
